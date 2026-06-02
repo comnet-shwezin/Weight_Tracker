@@ -1,0 +1,17 @@
+{
+  "short_name": "Weight Tracker",
+  "name": "Weight Tracker - Offline Tracker & Analytics",
+  "icons": [
+    {
+      "src": "/app-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#10b981",
+  "display": "standalone",
+  "orientation": "portrait"
+}

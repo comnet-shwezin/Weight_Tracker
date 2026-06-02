@@ -1,0 +1,6 @@
+{
+  "name": "Weight Tracker",
+  "description": "အင်တာနက်မလိုဘဲ ဖုန်းထဲတွင် ကိုယ်အလေးချိန်မှတ်တမ်းတင်ရန်၊ တွက်ချက်ခြင်းနှင့် Graph များဖြင့် အလွယ်တကူစောင့်ကြည့်ရန် offline-first Weight Tracker application ဖြစ်ပါသည်။",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

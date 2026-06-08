@@ -116,6 +116,7 @@ export default function Login({ onSuccess, onToggleForm }: LoginProps) {
                 )}
               </button>
             </div>
+            <p className="text-xs text-gray-500 mt-1">At least 6 characters</p>
           </div>
 
           {/* Submit Button */}

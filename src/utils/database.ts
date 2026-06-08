@@ -86,12 +86,14 @@ export async function updateWeightGoal(goal: Omit<WeightGoal, 'id'>) {
 
   const { data, error } = await supabase
     .from('weight_goals')
-    .upsert({
-      user_id: user.id,
-      target_weight: goal.targetWeight,
-      start_weight: goal.startWeight,
-      unit: goal.unit,
-    })
+    .upsert([
+      {
+        user_id: user.id,
+        target_weight: goal.targetWeight,
+        start_weight: goal.startWeight,
+        unit: goal.unit,
+      },
+    ], { onConflict: 'user_id' })
     .select();
 
   if (error) throw new Error(`Failed to update goal: ${error.message}`);
